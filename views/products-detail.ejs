@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container mt-5">
+      <a href="/" class="btn btn-secondary mb-3">Quay lại danh sách sản phẩm</a>
+      <div class="card">
+        <div class="card-header">
+          <h1><%= product.name %></h1>
+        </div>
+        <div class="card-body">
+          <div class="row">
+            <div class="col-md-4">
+              <img
+                src="/uploads/<%= product.image %>"
+                class="img-fluid"
+                alt="<%= product.name %>"
+              />
+            </div>
+            <div class="col-md-8">
+              <p><strong>Price:</strong> <%= product.price %> VNĐ</p>
+              <p><strong>Description:</strong> <%= product.description %></p>
+              <a href="" class="btn btn-primary">Mua</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>
